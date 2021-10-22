@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.estiven.cryptodivisas.ui.view.fragments.HomeFragment"
+        android:label="Crypto Divisas"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_currenciesDetailsFragment"
+            app:destination="@id/currenciesDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currenciesDetailsFragment"
+        android:name="com.estiven.cryptodivisas.ui.view.fragments.CurrenciesDetailsFragment"
+        android:label="fragment_currencies_details"
+        tools:layout="@layout/fragment_currencies_details">
+        <argument
+            android:name="fullName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="network"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="id_currency"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="protocol"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="default"
+            app:argType="boolean" />
+        <argument
+            android:name="payin_enabled"
+            app:argType="boolean" />
+        <argument
+            android:name="payout_enabled"
+            app:argType="boolean" />
+        <argument
+            android:name="precision_payout"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="payout_fee"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="payout_is_payment_id"
+            app:argType="boolean" />
+        <argument
+            android:name="payin_payment_id"
+            app:argType="boolean" />
+        <argument
+            android:name="payin_confirmations"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="low_processing_time"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="high_processing_time"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="avg_processing_time"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="key"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.estiven.cryptodivisas.ui.view.fragments.FavoritesFragment"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favorites" />
+</navigation>

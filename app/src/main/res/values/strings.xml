@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CryptoDivisas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_favorites">Favoritos</string>
+    <string name="text_delete_favorite">Eliminado de favoritos</string>
+    <string name="text_add_favorite">Agregado a favoritos</string>
+    <string name="list_empty">La lista esta vacia</string>
+    <string name="text_information">Información</string>
+    <string name="text_network">Network:</string>
+    <string name="text_protocol">Protocol:</string>
+    <string name="text_default">Default:</string>
+    <string name="text_payin_enabled">Payin Enabled:</string>
+    <string name="text_payout_enabled">Payout Enabled:</string>
+    <string name="text_precision_payout">Precision Payout:</string>
+    <string name="text_payout_fee">Payout Fee:</string>
+    <string name="text_payout_is_payment_id">Payout is Payment ID:</string>
+    <string name="text_payout_payment_id">Payout Payment ID:</string>
+    <string name="text_payin_confirmations">Payin confirmations:</string>
+    <string name="text_low_proccesing_time">Low Proccesing Time:</string>
+    <string name="text_high_processing_time">High Processing Time:</string>
+    <string name="text_avg_processing_time">Avg Processing Time:</string>
+    <string name="text_a_que_divisa_deseas_convertir">¿A que divisa deseas convertir?</string>
+    <string name="text_conversion">No hay conversion para esta moneda</string>
+    <string name="text_image_currencies">Imagen de las divisas</string>
+    <string name="text_id">id:</string>
+    <string name="text_price">price:</string>
+    <string name="text_qty">qty:</string>
+    <string name="text_side">side:</string>
+    <string name="text_timestamp">timestamp:</string>
+</resources>
